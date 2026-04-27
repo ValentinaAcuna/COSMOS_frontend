@@ -1,0 +1,156 @@
+.home {
+  position: relative;
+}
+
+.home__hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.home__hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 60%;
+  filter: brightness(0.7);
+}
+
+.home__hero-logo {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home__hero-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.home__hero-star {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  left: -120px;
+  top: 51%;
+  transform: translateY(-55%);
+  z-index: 0;
+  opacity: 0.75;
+}
+
+.home__hero-cosmos {
+  position: relative;
+  z-index: 1;
+  font-family: 'Irish Grover', cursive;
+  font-weight: 400;
+  font-size: 150px;
+  color: white;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.home__hero-sub {
+  position: relative;
+  z-index: 1;
+  font-size: 25px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: rgba(255,255,255,0.85);
+  letter-spacing: 2px;
+  margin-top: -10px;
+  text-align: right;
+}
+
+/* ---- Destacados section ---- */
+
+.home__featured {
+  position: relative;
+  background: #D4B8E0;
+}
+
+.home__torn-edge {
+  width: 100%;
+  height: 40px;
+  background: white;
+  -webkit-mask-image: url('/torn-paper.png');
+  mask-image: url('/torn-paper.png');
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.home__featured-inner {
+  padding: 60px 60px 60px;
+  background: white;
+}
+
+.home__featured-title {
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+  color: var(--color-text);
+  text-align: center;
+}
+
+.home__product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.home__card-placeholder {
+  aspect-ratio: 3/4;
+  background: rgba(255,255,255,0.4);
+  border-radius: 8px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+.home__see-all {
+  text-align: center;
+  margin-top: 28px;
+}
+
+.home__see-all-btn {
+  display: inline-block;
+  padding: 12px 40px;
+  background: white;
+  color: #305085;
+  font-weight: 700;
+  border: 2px solid #305085;
+  border-radius: 30px;
+  transition: opacity 0.2s;
+}
+
+.home__see-all-btn:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 480px) {
+  .home__product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .home__hero-cosmos {
+    font-size: 38px;
+  }
+  .home__hero-star {
+    width: 52px;
+    height: 52px;
+  }
+}

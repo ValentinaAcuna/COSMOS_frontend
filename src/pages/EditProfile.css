@@ -1,0 +1,79 @@
+.edit-profile {
+  padding: 50px 350px 50px;
+  position: relative;
+}
+
+.edit-profile__star-deco {
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  width: 140px;
+  height: 140px;
+  background: var(--color-star);
+  opacity: 0.18;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  pointer-events: none;
+}
+
+.edit-profile__title {
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-text);
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.edit-profile__form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.edit-profile__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.edit-profile__field label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--color-text);
+}
+
+.edit-profile__field input {
+  width: 100%;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 20px;
+  font-size: 13px;
+  background: var(--color-gray-light);
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.edit-profile__field input:focus {
+  outline: none;
+}
+
+.edit-profile__submit-btn {
+  display: block;
+  width: fit-content;
+  margin: 12px auto 0;
+  padding: 13px 44px;
+  background: white;
+  color: #305085;
+  border: 2px solid #305085;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 30px;
+  transition: opacity 0.2s;
+}
+
+.edit-profile__submit-btn:hover {
+  opacity: 0.85;
+}

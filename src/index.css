@@ -1,0 +1,45 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-dark: #08080F;
+  --color-star: #ffe328;
+  --color-cyan: #00D4DB;
+  --color-lavender: #7B7CE8;
+  --color-white: #ffffff;
+  --color-gray-light: #f5f5f5;
+  --color-gray: #e0e0e0;
+  --color-text: #1a1a1a;
+  --color-text-muted: #666666;
+  --font: sans-serif;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--color-text);
+  background: var(--color-white);
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font);
+}
+
+input, textarea {
+  font-family: var(--font);
+}

@@ -1,0 +1,50 @@
+.footer {
+  background: black;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.footer__social {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__social a {
+  color: white;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.2s;
+}
+
+.footer__social a:hover {
+  opacity: 0.7;
+}
+
+.footer__contact {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 15px;
+}
+
+.footer__copy {
+  text-align: center;
+  color: rgba(255,255,255,0.5);
+  font-size: 12px;
+  margin: 0;
+}
+
+.footer__divider {
+  margin: 0 7px;
+  color: white;
+}
